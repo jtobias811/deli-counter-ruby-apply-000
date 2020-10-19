@@ -23,6 +23,6 @@ def line(katz_deli)
     katz_deli.each_with_index do |name, index|
       message += "#{index.to_i+1}. #{name}"
     end
-    puts "#{message} "
+    puts " #{message} "
   end
 end
