@@ -1,4 +1,4 @@
-# Write your code here.
+require 'pry'
 katz_deli = []
 
 def take_a_number(katz_deli, name)
@@ -12,6 +12,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |name, index|
+      binding.pry
     current_line << "#{index + 1}. #{name}"
     end
   end
