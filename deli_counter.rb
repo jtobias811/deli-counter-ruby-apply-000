@@ -7,11 +7,12 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
+  current_line = []
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |name, index|
-      puts "#{name} is number #{index + 1} in line. "
+    current_line << "#{index + 1}. #{name}"
     end
   end
 end
